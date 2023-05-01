@@ -13,8 +13,8 @@ const generarDeck = () => {
     }
 
     for (let tipo of tipos) {
-        for (let esp of especiales) {
-            deck.push(esp + tipo)
+        for (let mon of monarcas) {
+            deck.push(mon + tipo)
         }
     }
 
@@ -23,3 +23,18 @@ const generarDeck = () => {
 
 generarDeck()
 
+const getCarta = () => {
+    if (deck.length ==  0) {
+        throw 'No hay más cartas'
+    }
+    let carta = deck.pop()
+    return carta
+}
+
+const valorCarta = (carta) => {
+    const valor = carta.substring(0, carta.length - 1)
+    return (isNaN(valor)) ? ((valor === 'A') ? 11:10):valor*1
+}
+
+const val = valorCarta('8D')
+console.log(val)

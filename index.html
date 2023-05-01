@@ -20,11 +20,11 @@
     <header class="titulo">BlackJack</header>
 
     <div class="center-text">
-        <div class="botones">
+        <div id="divBotones" class="botones">
 
-            <button class="btn btn-danger">Nuevo Juego</button>
-            <button class="btn btn-primary">Pedir Carta</button>
-            <button class="btn btn-primary">Detener</button>
+            <button id="btnNuevo" class="btn btn-danger">Nuevo Juego</button>
+            <button id="btnPedir" class="btn btn-primary">Pedir Carta</button>
+            <button id="btnDetener" class="btn btn-primary">Detener</button>
 
         </div>
     </div>
@@ -35,9 +35,6 @@
             <h1>Jugador 1 - <small>0</small></h1>
             
             <div id="jugador-cartas">
-                
-                <img src="assets/cartas/10C.png" alt="catas" class="carta">
-
             </div>
 
         </div>
@@ -49,15 +46,11 @@
             <h1>Computadora - <small>0</small></h1>
             
             <div id="computadora-cartas">
-                
-                <img src="assets/cartas/10D.png" alt="catas" class="carta">
-
             </div>
 
         </div>
     </div>
 
-    <script src="assets/js/underscore.js"></script>
     <script src="assets/js/juego.js"></script>
 
 </body>

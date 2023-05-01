@@ -40,7 +40,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .titulo {
@@ -59,7 +59,7 @@ h1 {
 }
 
 #computadora-cartas, #jugador-cartas {
-    height: 240px;
+    height: 24rem;
 }
 .btn {
     min-width: 12rem;
